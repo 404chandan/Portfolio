@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandan Pandey | Portfolio</title>
+    <meta name="description" content="Portfolio of Chandan Pandey - Software Engineer at Siemens, NIT Jamshedpur alumnus, and Full Stack Developer. Specialized in Go, Python, React, and Backend Automation.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Ambient Background Elements -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- Header / Navbar -->
+    <header id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">&lt;</span>Chandan<span class="logo-accent"> /&gt;</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link active">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle dark/light theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="mobile-nav-toggle" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span> Available for Opportunities
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="text-gradient">Chandan Pandey</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    I build <span id="typewriter" class="text-gradient-alt"></span>
+                </h2>
+                <p class="hero-description">
+                    Software Engineer at <strong>Siemens</strong>. NIT Jamshedpur graduate. Specialized in designing high-performance backend architectures, automation systems, and scalable full-stack web applications.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-num">2052</span>
+                        <span class="stat-label">LeetCode Knight</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">1460</span>
+                        <span class="stat-label">Codeforces Specialist</span>
+                    </div>
+                </div>
+                <div class="hero-ctas">
+                    <a href="#contact" class="btn btn-primary">Get in Touch <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#projects" class="btn btn-secondary">View My Work</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-card-wrapper">
+                    <div class="code-card">
+                        <div class="code-card-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="card-title">chandan.go</span>
+                        </div>
+                        <div class="code-card-body">
+<pre><code><span class="keyword">package</span> main
+
+<span class="keyword">import</span> <span class="string">"fmt"</span>
+
+<span class="keyword">type</span> <span class="type">Engineer</span> <span class="keyword">struct</span> {
+    Name     <span class="type">string</span>
+    Role     <span class="type">string</span>
+    Skills   []<span class="type">string</span>
+}
+
+<span class="keyword">func</span> <span class="function">main</span>() {
+    me := Engineer{
+        Name:   <span class="string">"Chandan Pandey"</span>,
+        Role:   <span class="string">"Software Engineer"</span>,
+        Skills: []<span class="type">string</span>{<span class="string">"Go"</span>, <span class="string">"Python"</span>, <span class="string">"React"</span>, <span class="string">"Docker"</span>},
+    }
+    fmt.Printf(<span class="string">"Building robust systems at Siemens...\n"</span>)
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-tag">01. About Me</span>
+                <h2 class="section-title">My Background</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I am a highly motivated Software Engineer currently working at <strong>Siemens DISW</strong>. I hold a Bachelor of Technology from the <strong>National Institute of Technology, Jamshedpur</strong>. With a strong algorithmic foundation and a love for building efficient systems, I enjoy working at the intersection of web development, system architecture, and automation.
+                    </p>
+                    <p>
+                        My experience spans full-stack engineering, performance profiling, and machine learning pipeline optimization. Outside of my day job, I compete actively in competitive programming and design open-source developer tooling.
+                    </p>
+                    <div class="education-card">
+                        <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="edu-info">
+                            <h4>National Institute of Technology, Jamshedpur</h4>
+                            <p class="edu-degree">Bachelor of Technology (B.Tech) • CGPA: 8.15</p>
+                            <p class="edu-meta">Class of 2022 - 2026 | Jharkhand, India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-code highlight-icon"></i>
+                        <h3>Problem Solver</h3>
+                        <p>Specialist on Codeforces and Knight on LeetCode. Strong command of complex Data Structures and Algorithms.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-gears highlight-icon"></i>
+                        <h3>Automation Expert</h3>
+                        <p>Experienced in automating workflows, setting up monitoring agents, and optimizing system responsiveness.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-tag">02. Work History</span>
+                <h2 class="section-title">Experience</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="timeline">
+                <!-- Siemens -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Feb 2026 – Present</div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Software Engineer</h3>
+                                <h4 class="company-name">Siemens DISW</h4>
+                            </div>
+                            <span class="job-type">Onsite, Bengaluru</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Automated InsightPro workflows, reducing manual effort by 80% and improving operational efficiency.</li>
+                            <li>Integrated PBS workload manager into InsightPro to enhance monitoring and workload visibility.</li>
+                            <li>Developed backend automation solutions for monitoring and analysis using Python and Golang.</li>
+                            <li>Built automation workflows for infrastructure monitoring and backend operational analysis.</li>
+                            <li>Implemented AI-driven troubleshooting to improve issue detection and debugging workflows.</li>
+                            <li>Optimized Linux-based system performance using Redis, improving response latency and reliability.</li>
+                        </ul>
+                        <div class="timeline-techs">
+                            <span>Python</span>
+                            <span>Playwright</span>
+                            <span>Golang</span>
+                            <span>Redis</span>
+                            <span>Docker</span>
+                            <span>AWS</span>
+                            <span>Linux</span>
+                            <span>Generative AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HighRadius -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Dec 2025 – Feb 2026</div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Software Engineer (Intern)</h3>
+                                <h4 class="company-name">HighRadius</h4>
+                            </div>
+                            <span class="job-type">Onsite, Hyderabad</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Developed backend systems for enterprise-scale fintech products focusing on scalability and performance.</li>
+                            <li>Designed and optimized REST APIs supporting financial workflows and backend services.</li>
+                            <li>Improved API responsiveness through debugging and backend performance optimization.</li>
+                            <li>Enhanced invoice data extraction pipelines using machine learning, increasing accuracy to 95%.</li>
+                            <li>Reduced system errors and improved processing efficiency through optimization initiatives.</li>
+                        </ul>
+                        <div class="timeline-techs">
+                            <span>Python</span>
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                            <span>REST APIs</span>
+                            <span>MySQL</span>
+                            <span>Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-tag">03. Expertise</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-terminal"></i> Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag-item"><i class="fa-solid fa-code"></i> C/C++</span>
+                        <span class="skill-tag-item"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="skill-tag-item"><i class="fa-brands fa-golang"></i> Go</span>
+                        <span class="skill-tag-item"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="skill-tag-item"><i class="fa-solid fa-database"></i> SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-layer-group"></i> Web & Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag-item"><i class="fa-brands fa-react"></i> React.js</span>
+                        <span class="skill-tag-item"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                        <span class="skill-tag-item"><i class="fa-solid fa-server"></i> Express.js</span>
+                        <span class="skill-tag-item"><i class="fa-solid fa-network-wired"></i> REST APIs</span>
+                        <span class="skill-tag-item"><i class="fa-solid fa-key"></i> JWT Auth</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-database"></i> Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag-item"><i class="fa-solid fa-database"></i> MongoDB</span>
+                        <span class="skill-tag-item"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+                        <span class="skill-tag-item"><i class="fa-solid fa-server"></i> Redis</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-cube"></i> Dev Tools & ML</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag-item"><i class="fa-brands fa-git-alt"></i> Git</span>
+                        <span class="skill-tag-item"><i class="fa-brands fa-docker"></i> Docker</span>
+                        <span class="skill-tag-item"><i class="fa-brands fa-aws"></i> AWS</span>
+                        <span class="skill-tag-item"><i class="fa-brands fa-linux"></i> Linux</span>
+                        <span class="skill-tag-item"><i class="fa-solid fa-infinity"></i> CI/CD</span>
+                        <span class="skill-tag-item"><i class="fa-solid fa-brain"></i> Machine Learning</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-tag">04. My Work</span>
+                <h2 class="section-title">Projects</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <!-- Featured Project -->
+            <div class="featured-project">
+                <div class="featured-image">
+                    <div class="project-mockup">
+                        <div class="mockup-header">
+                            <span class="circle-btn"></span>
+                            <span class="circle-btn"></span>
+                            <span class="circle-btn"></span>
+                            <span class="mockup-url">scalecheck.dev</span>
+                        </div>
+                        <div class="mockup-content">
+                            <div class="mockup-logo">ScaleCheck</div>
+                            <div class="mockup-nodes">
+                                <div class="node-box">Client</div>
+                                <div class="node-arrow"><i class="fa-solid fa-arrow-right-long"></i></div>
+                                <div class="node-box accent">Load Balancer</div>
+                                <div class="node-arrow"><i class="fa-solid fa-arrow-right-long"></i></div>
+                                <div class="node-box">Web App (x3)</div>
+                            </div>
+                            <div class="mockup-graph">
+                                <span class="bar" style="height: 40%"></span>
+                                <span class="bar" style="height: 60%"></span>
+                                <span class="bar" style="height: 85%"></span>
+                                <span class="bar" style="height: 50%"></span>
+                                <span class="bar" style="height: 70%"></span>
+                                <span class="bar" style="height: 95%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-content">
+                    <span class="featured-label">Featured Project</span>
+                    <h3 class="featured-title">ScaleCheck</h3>
+                    <p class="featured-desc">
+                        A real-time system design and load-testing platform built for modeling multi-tier architectures and detecting bottlenecks. Users can map topologies visually and simulate live packet flow with dynamic loads, monitoring real-time metrics like RPS, latency, and failures via SSE.
+                    </p>
+                    <div class="featured-techs">
+                        <span>React.js</span>
+                        <span>React Flow</span>
+                        <span>Chart.js</span>
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>SSE</span>
+                    </div>
+                    <div class="featured-links">
+                        <a href="https://github.com/404chandan/ScaleCheck" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i> Code</a>
+                        <a href="#" class="disabled-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GitHub Repositories Dynamic Loading -->
+            <div class="github-repos-header">
+                <h3>More Open-Source Projects</h3>
+                <p>Dynamically fetched from my public GitHub repositories</p>
+                <div class="repo-filters">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="repo-search" placeholder="Search repositories...">
+                    </div>
+                    <div class="filter-tags" id="repo-tags-filter">
+                        <button class="filter-btn active" data-lang="all">All</button>
+                        <button class="filter-btn" data-lang="go">Go</button>
+                        <button class="filter-btn" data-lang="python">Python</button>
+                        <button class="filter-btn" data-lang="javascript">JavaScript</button>
+                        <button class="filter-btn" data-lang="jupyter notebook">Data Science / ML</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid Container for Repos -->
+            <div class="repos-grid" id="repos-container">
+                <!-- Repo Skeletons Loaded dynamically via JS -->
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-tag">05. Recognition</span>
+                <h2 class="section-title">Achievements</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="ach-icon"><i class="fa-solid fa-trophy"></i></div>
+                    <h3>Top 10 Finish</h3>
+                    <h4>AI Speech Hackathon 2024</h4>
+                    <p>Organized by Aitch Nu Global Technologies. Built an AI assistant application leveraging speech-to-text models.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="ach-icon"><i class="fa-solid fa-award"></i></div>
+                    <h3>Top 30 Finish</h3>
+                    <h4>Code Clash 2024 - 25</h4>
+                    <p>Competed against coding talents across institutions in the coding event organized by VIT Vellore.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="ach-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                    <h3>Top 100 Finish</h3>
+                    <h4>Navishkar Tech Event 2023 - 24</h4>
+                    <p>Innovation event organized by NRIIC celebrating out-of-the-box system automation and architectures.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="ach-icon"><i class="fa-solid fa-users"></i></div>
+                    <h3>Placement Coordinator</h3>
+                    <h4>NIT Jamshedpur</h4>
+                    <p>Selected as a placement representative for a cohort of over 800 engineering students.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-tag">06. Next Steps</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Let's build something great together</h3>
+                    <p>Whether you want to discuss system architectures, automation workflows, open-source projects, or potential opportunities, feel free to reach out!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <span>Email</span>
+                                <a href="mailto:chandan.works.91@gmail.com">chandan.works.91@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <span>Phone</span>
+                                <a href="tel:+916205330891">+91 6205330891</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <span>Location</span>
+                                <p>Bengaluru, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/chandan-pandey91" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/404chandan" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://leetcode.com/404chandan" target="_blank" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required placeholder="Hi Chandan, I'd love to connect regarding..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                        <div id="form-status" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Chandan Pandey. Built with passion &amp; clean code.</p>
+            <p class="footer-github-link">
+                <a href="https://github.com/404chandan" target="_blank"><i class="fa-brands fa-github"></i> github.com/404chandan</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
