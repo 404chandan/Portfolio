@@ -918,7 +918,28 @@ body.light-theme .skill-tag-item {
 
 .featured-desc {
     color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.featured-bullets {
     margin-bottom: 1.5rem;
+    list-style: none;
+    padding-left: 0;
+}
+
+.featured-bullets li {
+    position: relative;
+    padding-left: 1.5rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.6rem;
+    font-size: 0.95rem;
+}
+
+.featured-bullets li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent-1);
 }
 
 .featured-techs {
