@@ -5,18 +5,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggleBtn = document.getElementById('theme-toggle');
     const themeIcon = themeToggleBtn.querySelector('i');
     
-    // Check local storage or system preferences
+    // Keep the professional light theme as the default while honoring a saved choice.
     const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
-    if (savedTheme === 'light' || (!savedTheme && !prefersDark)) {
-        document.body.classList.remove('dark-theme');
-        document.body.classList.add('light-theme');
-        themeIcon.className = 'fa-solid fa-sun';
-    } else {
+    if (savedTheme === 'dark') {
         document.body.classList.remove('light-theme');
         document.body.classList.add('dark-theme');
         themeIcon.className = 'fa-solid fa-moon';
+    } else {
+        document.body.classList.remove('dark-theme');
+        document.body.classList.add('light-theme');
+        themeIcon.className = 'fa-solid fa-sun';
     }
 
     themeToggleBtn.addEventListener('click', () => {
