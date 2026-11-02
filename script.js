@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('motion-enabled');
+
     // ==========================================
     // THEME SWITCHER
     // ==========================================
